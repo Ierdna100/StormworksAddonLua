@@ -1,0 +1,16 @@
+{
+    "name": "Stormworks API Reference",
+    "words": [ "g_savedata" ],
+    "files": [ "script.lua" ],
+    "settings": {
+        "Lua.diagnostics.disable": [
+            "lowercase-global"
+          ],
+          "Lua.diagnostics.globals": [
+            "matrix",
+            "server",
+            "property",
+            "g_savedata"
+          ]
+    }
+}

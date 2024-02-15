@@ -45,6 +45,10 @@ function server.getVolcanos() end
 ---@param checkAtPosition Transform Tf of where to check for oil spill.
 ---@return number oilAmount Quantity of oil spilled.
 function server.getOilSpill(checkAtPosition) end
+---Sets the oil spill amount at the target location, the amount is blended across nearby tiles.
+---@param tf Transform
+---@param amount number
+function server.setOilSpill(tf, amount) end
 ---Sets the oil spill amount at the target location, this amount is blended across nearby tiles.
 ---@param position Transform Tf of where to set oil spill amount.
 ---@param magnitude number Magnitude of oil spill.
@@ -274,3 +278,7 @@ function server.pathfindOcean(startTf, endTf) end
 ---Returns a table of underground oil deposit positions.
 ---@return {x: number, y: number, z: number, r: number, oil: number}[] oilDeposits Table of existing oil deposits.
 function server.getOilDeposits() end
+
+---@deprecated Used before you could access individual tiles. Do not use anymore.
+---@see server.getStartTile
+function server.getStartIsland() end
